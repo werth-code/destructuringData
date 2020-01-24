@@ -1,0 +1,126 @@
+/* 
+
+// 1. Destructuring Arrays
+
+const alphabet = ['A', 'B', 'C', 'D', 'E', 'F']
+const numbers = [1, 2, 3, 4, 5, 6,]
+
+const [a, b, ...rest] = alphabet
+
+console.log(a)
+console.log(b)
+console.log(rest)
+
+
+// 2. ...rest operator
+
+const newArray = [...alphabet, ...numbers]
+console.log(newArray) */
+
+// 3. Using destructuring with functions.
+
+/*
+
+function sumAndMultiply (a, b) {
+  return  [a + b, a * b]
+  
+const [sum, multiply] = sumAndMultiply (2, 3)
+
+console.log(sum)
+console.log(multiply)
+
+*/
+
+// 4. Setting default variables.
+
+/*
+
+function sumAndMultiply (a, b) {
+  return  [a + b, a * b, a / b]
+}
+
+const [sum, multiply, division = 'no division'] = sumAndMultiply (2, 3, 4)
+
+console.log(sum)
+console.log(multiply)
+console.log(division)
+
+*/
+
+
+// 5. Working With OBJECTS
+
+/*
+
+const personTwo = {
+  name: 'sally',
+  age: 32,
+  favoriteFood: 'Mangoes',
+  address: {
+    city: 'Philadelphia',
+    state: 'Pennsylvania'
+  }
+}
+
+const { name: firstName, age: currentAge, favoriteFood = 'rice', address: { city, state } } = personTwo
+
+console.log(firstName)
+console.log(currentAge)
+console.log(favoriteFood)
+console.log(city, state)
+
+/* If a value is set inside the object it will be chosen first! You can set it within the destructured variable as a default. You can also use the ...rest to get the remaining information out of the object */
+
+const personOne = {
+  name: 'Dan',
+  age: 38,
+  favoriteFood: 'Grilled Cheese',
+  favoriteSport: 'Football',
+  pets: {
+    dog: 'Charles',
+    cat: 'Mr Sprinklesburger'
+  },
+  address: {
+    city: 'Denver',
+    state: 'Colorado'
+  },
+}
+
+const personTwo = {
+  name: 'sally',
+  age: 32,
+  favoriteFood: 'Mangoes',
+  address: {
+    city: 'Philadelphia',
+    state: 'Pennsylvania'
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
